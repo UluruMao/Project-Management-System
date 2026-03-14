@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1752380110 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\client.cpp
+	"Client.hpp"
+	<iostream>
+
+1752380110 c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\client.hpp
+	<string>
+
+1752380111 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\project.cpp
+	"Project.hpp"
+	<iostream>
+
+1752381474 c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\project.hpp
+	<string>
+
+1752380110 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\task.cpp
+	"Task.hpp"
+	<iostream>
+	<iomanip>
+
+1752380111 c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\task.hpp
+	<string>
+	<vector>
+
+1752380111 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\teammember.cpp
+	"TeamMember.hpp"
+	<iostream>
+	<string>
+
+1752380110 c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\teammember.hpp
+	"Person.hpp"
+	<string>
+
+1752380110 c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\person.hpp
+	<string>
+	<iostream>
+
+1752380111 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\vendor.cpp
+	"Vendor.hpp"
+	<iostream>
+
+1752380111 c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\vendor.hpp
+	<string>
+
+1752380110 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\filemanager.cpp
+	"FileManager.hpp"
+	<fstream>
+	<sstream>
+
+1752380110 c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\filemanager.hpp
+	<vector>
+	<string>
+	"Project.hpp"
+	"Task.hpp"
+	"TeamMember.hpp"
+
+1752380111 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\person.cpp
+	"Person.hpp"
+
+1751862415 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\main.cpp
+	<iostream>
+	<limits>
+	"ProjectManagementSystem.hpp"
+
+1752380111 c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\projectmanagementsystem.hpp
+	<vector>
+	<string>
+	"Project.hpp"
+	"Task.hpp"
+	"TeamMember.hpp"
+	"Vendor.hpp"
+	"Client.hpp"
+
+1752380111 source:c:\users\mao\desktop\object-oriented programming-c++\final project\cppfinal\projectmanagementsystem.cpp
+	"ProjectManagementSystem.hpp"
+	"FileManager.hpp"
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+
