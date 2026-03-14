@@ -1,4 +1,5 @@
 # C++ Project Management System
+This is an individual C++ course final project.
 
 This Project Management System is a C++ console-based application that allows users to manage projects, tasks (including sub-tasks), team members, vendors, and clients through a structured menu-driven interface. 
 
