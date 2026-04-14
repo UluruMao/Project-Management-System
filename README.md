@@ -72,27 +72,24 @@ Navigate to the directory containing the source files:
 
 Bash:
 
-
+```
 cd path/to/cppFinal
-
+```
 
 Compile all .cpp files together into a single executable:
 
 Bash:
 
-
+```
 g++ -std=c++11 *.cpp -o ProjectManagementSystem.exe
-
+```
 
 Run the compiled program:
 
 Bash:
 
-
+```
 ./ProjectManagementSystem.exe
-
+```
 ### Option3 : Directly run the program (Built already)
 Just double-click ProjectManagementSystem.exe
-
-## Copyright
-Copyright reserved by UluruMao.
