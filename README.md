@@ -91,5 +91,3 @@ Bash:
 ```
 ./ProjectManagementSystem.exe
 ```
-### Option3 : Directly run the program (Built already)
-Just double-click ProjectManagementSystem.exe
