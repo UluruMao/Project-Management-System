@@ -1,3 +1,0 @@
-Project1,Design a water usage fee calculator,2025/01/01,2025/01/30,Completed
-Project2,Design a CPGA calculator,2025/04/01,2025/05/01,Completed
-Proejct3,binary search program,2025/06/01,2025/08/01,In Progress
