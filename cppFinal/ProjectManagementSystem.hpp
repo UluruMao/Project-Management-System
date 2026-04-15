@@ -9,10 +9,11 @@
 #include "TeamMember.hpp"
 #include "Vendor.hpp"
 #include "Client.hpp"
+#include <unordered_map>
 
 class ProjectManagementSystem {
 private:
-    std::vector<Project> projects;
+    std::unordered_map<std::string, Project> projects;
     std::vector<Task> tasks;
     std::vector<TeamMember> teamMembers;
     std::vector<Vendor> vendors;
