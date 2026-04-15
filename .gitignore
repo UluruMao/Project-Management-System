@@ -10,12 +10,18 @@ obj/
 *.depend
 *.layout
 
-# Local Data Files (Prevents uploading your generated save data)
+# Local Data Files 
 projects.txt
 tasks.txt
 team.txt
 vendors.txt
 clients.txt
+
+projects.csv
+tasks.csv
+team.csv
+vendors.csv
+clients.csv
 
 # OS generated files
 .DS_Store
