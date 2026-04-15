@@ -10,23 +10,30 @@ using namespace std;
 
 // ========== PROJECT ==========
 
+
+
 void ProjectManagementSystem::addProject(const Project& p) {
-    projects.push_back(p);
+    // Use the project name as the key and the project object as the value.
+    projects[p.getName()] = p;
 }
 
 void ProjectManagementSystem::updateProject(const string& name, const Project& updated) {
-    for (auto& p : projects) {
-        if (p.getName() == name) {
-            p = updated;
-            return;
+    auto it = projects.find(name); //
+    if (it != projects.end()) {
+        // If the user changes the project name during the update
+        if (name != updated.getName()) {
+            projects.erase(it); // Delete old key-value pairs
+            projects[updated.getName()] = updated; // Insert new key-value pair
+        } else {
+            it->second = updated; // Name remains unchanged, update Value
         }
+    } else {
+        cout << "Project not found!\n";
     }
 }
 
 void ProjectManagementSystem::deleteProject(const string& name) {
-    projects.erase(remove_if(projects.begin(), projects.end(),
-                             [&](const Project& p) { return p.getName() == name; }),
-                   projects.end());
+    projects.erase(name);
 }
 
 // ========== TASK ==========
@@ -133,7 +140,10 @@ void ProjectManagementSystem::deleteClient(const string& name) {
 // ========== DISPLAY ==========
 
 void ProjectManagementSystem::displayAllProjects() const {
-    for (const auto& p : projects) p.display();
+
+    for (const auto& pair : projects) {
+        pair.second.display();
+    }
 }
 
 void ProjectManagementSystem::displayAllTasks() const {
@@ -171,16 +181,30 @@ void ProjectManagementSystem::showStatusOptions() {
 // ========== SAVE & LOAD ==========
 
 void ProjectManagementSystem::saveAll() {
-    FileManager::saveProjects(projects, projectFile);
+    // Convert the map to a vector and pass it to the existing FileManager.
+    std::vector<Project> tempProjects;
+    for (const auto& pair : projects) {
+        tempProjects.push_back(pair.second);
+    }
+    FileManager::saveProjects(tempProjects, projectFile);
+
     FileManager::saveTasks(tasks, taskFile);
     FileManager::saveTeamMembers(teamMembers, teamFile);
 }
 
 void ProjectManagementSystem::loadAll() {
-    projects = FileManager::loadProjects(projectFile);
+    projects.clear(); // Clear current memory data
+
+    // Read the vector from FileManager and then load each element into the map.
+    std::vector<Project> loadedProjects = FileManager::loadProjects(projectFile);
+    for (const auto& p : loadedProjects) {
+        projects[p.getName()] = p;
+    }
+
     tasks = FileManager::loadTasks(taskFile);
     teamMembers = FileManager::loadTeamMembers(teamFile);
 }
+
 
 // Show all vendors.
 void ProjectManagementSystem::displayAllVendors() const {
