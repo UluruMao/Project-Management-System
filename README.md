@@ -41,12 +41,6 @@ cppFinal/
 │   ├── TeamMember.cpp
 │   └── Vendor.cpp
 │
-├── Data Files (Generated automatically)
-│   ├── projects.txt               # CSV storage for projects
-│   ├── tasks.txt                  # CSV storage for tasks
-│   ├── team.txt                   # CSV storage for team members
-│   ├── vendors.txt                # CSV storage for vendors
-│   └── clients.txt                # CSV storage for clients
 │
 └── cppFinal.cbp                   # Code::Blocks project configuration file
 ```
