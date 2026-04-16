@@ -10,7 +10,7 @@ It is developed using object-oriented programming principles such as encapsulati
 * **Comprehensive Entity Management:** Full CRUD (Create, Read, Update, Delete) support for Projects, Tasks, Team Members, Vendors, and Clients.
 * **Advanced Task Tracking:** Manage sub-tasks, assign tasks to specific team members, and filter tasks by their current status (e.g., Not Started, In Progress, Completed).
 * **Data Persistence:** Automatically saves and loads all system data using local text files formatted as CSVs, ensuring no data loss between sessions.
-* **OOP & STL:** Built with a modular architecture using inheritance, polymorphism, and C++ STL containers like `std::vector` for memory-safe data management.
+* **OOP & STL:** Built with a modular architecture using inheritance, polymorphism, and C++ STL containers like `std::vector` `std::unordered_map` for memory-safe data management.
 
 ##  Folder Structure
 
